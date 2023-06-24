@@ -5,32 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <div id="main">
-        <div id="sidebar"></div>
-        <div id="content">
-          <div id="navbar"></div>
-          <div id="main-content">
-            <div class="main-row " style="height: 45%">
-              <div class="main-column" style="width:70%">
-                  <div id="kpis">
-                    <div class="kpi"></div>
-                    <div class="kpi"></div>
-                    <div class="kpi" ></div>
+    <div id="wrapper">
+      <div id="sidebar">
+        <div id="brand">
+          <i class="fa-brands fa-algolia"></i>&ensp;
+          <span>Hylesoin</span>
+        </div>
+        <div id="list">
+          <ul>
+            <a href="#"><li id="Dashboard"><i class="fa-brands fa-microsoft"></i>&ensp;Dashboard</li></a>
+            <a href="#"><li id="Assets"><i class="fa-solid fa-wallet"></i>&ensp;Assets</li></a>
+            <a href="#"><li id="Trade"><i class="fa-solid fa-money-bill-trend-up"></i>&ensp;Trade</li></a>
+            <a href="#"><li id="Pay"><i class="fa-solid fa-cash-register"></i>&ensp;Pay</li></a>
+            <a href="#"><li id="For You"><i class="fa-regular fa-paper-plane"></i>&ensp;For You</li></a>
+            <a href="#"><li id="Invite Friends"><i class="fa-solid fa-clipboard"></i>&ensp;Invite Friends</li></a>
+            <a href="#"><li id="Settings"><i class="fa-solid fa-gear"></i>&ensp;Settings</li></a>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <div id="navbar">
 
-                  </div>
-                  <div class="chart"></div>
+        </div>
+        <div id="main">
+          <div class="r rowh45">
+            <div class="c colw70">
+              <div id="kpis">
+                <div class="kpi"></div>
+                <div class="kpi"></div>
+                <div class="kpi"></div>
               </div>
-              <div class="main-column"style="width:30%; background-color: var(--white)">
+              <div id="chart">
 
               </div>
             </div>
-            <div class="main-row" style="height:55%; background-color: var(--white)">
-            
+            <div class="c colw30">
+
+            </div>
+          </div>
+          <div class="r rowh55">
+
           </div>
         </div>
       </div>
+    </div>
+    
 </body>
 </html>
