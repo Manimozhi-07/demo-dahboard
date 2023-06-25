@@ -1,9 +1,9 @@
 :root {
     --white: white;
-    --grey: #f1f1f1;
-    --primary:#6a21ca;
-    --font-color:#9d9d9d;
-
+    --grey: #f2f3f5;
+    --primary:#7545FB;
+    --font-color:#727272;
+    --search:#e6e6e6;
   }
   * {
     margin: 0;
@@ -22,7 +22,7 @@
     width:15%;
     height:100vh;
     background-color: var(--white);
-    
+   
   }
   #brand{
     padding:15px;
@@ -54,7 +54,7 @@
     padding:10px;
     
   }
-  #list li:hover
+ .activelist
   {
     background-color:var(--primary);
     border-radius: 10px;
@@ -63,18 +63,70 @@
   #content{
     width:85%;
     height:100vh;
-    padding:15px;
+    padding:15px 20px;
     display:flex;
     flex-direction: column;
     gap:15px;
   }
  #navbar{
   width:100%;
-  height:10%;
+  height:7%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ #searchbar{
+  width:30%;
+  height:100%;
+ background-color: var(--search);
+ border-radius: 30px;
+ color: var(--font-color);
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ padding:10px;
+ 
+ }
+ #searchbar i{
+  font-size: 20px;
+ }
+ #searchbar input{
+  width:100%;
+  border-radius: 30px;
+  background-color:var(--search);
+  padding:10px;
+  outline:none;
+  border:none;
+  height:100%;
+ }
+ #right-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+ }
+ .icon{
+  width:35px;
+  height:35px;
+  background-color:var(--white);
+  border-radius: 50%;
+  text-align: center;
+  padding:5px;
+  font-size: 18px;
+  color: var(--font-color);
+ }
+ #prf-img img{
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+ }
+ #dropdown i{
+  font-size: 10px;
+  color: var(--font-color);
  }
  #main{
   width:100%;
-  height:90%;
+  height:93%;
   display:flex;
     flex-direction: column;
     gap:15px;
@@ -123,4 +175,17 @@
   height:55%;
   background-color: var(--white);
   border-radius: 10px;
+}
+#tabs{
+  display: flex;
+  gap:15px;
+  font-size: 14px;
+  padding: 10px;
+  color: var(--font-color);
+ 
+}
+.activetab{
+  border-bottom: 3px solid var(--primary);
+  color: black;
+  font-weight: bold;
 }
